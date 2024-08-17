@@ -98,7 +98,10 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-teal-300 ">
                 Code your dream project
               </h3>
-              
+              <p className="py-2 dark:text-slate-300">
+                Do you have an idea for your next great website? Let's make it a
+                reality.
+              </p>
               <h4 className="py-4 text-teal-600 dark:text-emerald-400">Design Tools I Use</h4>
               <p className="text-gray-800 py-1 dark:text-emerald-400">Photoshop</p>
               <p className="text-gray-800 py-1 dark:text-emerald-400">Illustrator</p>
