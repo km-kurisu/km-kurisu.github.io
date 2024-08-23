@@ -38,7 +38,7 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-slate-800">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-4xl text-slate-600 font-aktura dark:text-slate-300">Kurisu Ichigo</h1>
+            <h1 className="text-4xl text-slate-600 font-aktura dark:text-slate-300">Kamlesh Mistry</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-xl  text-gray-600 dark:text-slate-300"/>
@@ -48,14 +48,15 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 ">
             <h2 className="text-5xl py-2 text-slate-600 font-medium md:text-6xl dark:text-gray-50 ">
-              Kurisu Ichigo
+              Kamlesh Mistry
               </h2>
             <h3 className="text-2xl py-2 text-teal-600 md:text-3xl dark:text-teal-300">
               Developer, Desginer and Artist.
               </h3>
             <p className="text-md py-5 leading-8 text-teal-800 md:text-xl max-w-xl mx-auto dark:text-slate-300">
-              Artist doing illustrations and concept arts also can design mockups and do 3d renders, 
-              expert writer amd storyboard creator along with being a game desginer and programmer
+            I possess a unique blend of skills that allow me to bridge the gap between creativity and technology. 
+            I can seamlessly transition from coding intricate algorithms to crafting visually stunning designs, all while infusing my work with a touch of artistic flair. 
+            My ability to combine technical expertise with creative vision makes me a versatile asset in the digital world.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-slate-300"> 
@@ -73,12 +74,22 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-teal-300">Services i offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300" >
-              Artist doing illustrations and concept arts also can design mockups and do 3d renders, 
-              expert writer amd storyboard creator along with being a game desginer and programmer
+              As a Developer, Designer, and Artist, I offer a comprehensive range of services tailored to your digital needs. My expertise includes:
               </p>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
-              Artist doing illustrations and concept arts also can design mockups and do 3d renders, 
-              expert writer amd storyboard creator along with being a game desginer and programmer
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
+              Web Development: Building custom websites with a focus on user experience, functionality, and aesthetics.
+              </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
+              App Design: Creating intuitive and visually appealing mobile applications.
+              </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
+              Digital Art: Producing original artwork, illustrations, and graphic design elements.
+               </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
+              UI/UX Design: Designing user interfaces that are both visually engaging and easy to navigate.
+               </p> 
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">  
+              Full-Stack Development: Handling all aspects of software development, from front-end to back-end.
               </p>
           </div>
           <div className="lg:flex gap-10">
@@ -131,8 +142,10 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-teal-300">Portfolio</h3>
             <p className="text-md py-5 leading-8 text-teal-800 dark:text-slate-300">
-              Artist doing illustrations and concept arts also can design mockups and do 3d renders, 
-              expert writer amd storyboard creator along with being a game desginer and programmer
+              My portfolio showcases a diverse range of projects that highlight my technical skills, 
+              creative vision, and problem-solving abilities. Each piece reflects my commitment to crafting innovative and visually appealing digital solutions. 
+              From responsive websites to engaging mobile apps and captivating artwork, 
+              my portfolio demonstrates my ability to seamlessly blend creativity and technology.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
