@@ -3,15 +3,11 @@ import Head from "next/head";
 import React from "react";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {
-  IoLogoDiscord, 
   IoLogoLinkedin,
   IoLogoGithub 
 } from 'react-icons/io5';
 import {AiFillInstagram} from 'react-icons/ai';
-import {
-  BiLogoTelegram,
-  BiLogoGmail
-} from 'react-icons/bi';
+import {BiLogoGmail} from 'react-icons/bi';
 import Image from "next/image";
 import RuanMei from '../public/RuanMei.png';
 import design from '../public/design.png';
@@ -63,8 +59,6 @@ export default function Home() {
           </div>
           <div className="text-3xl flex justify-center gap-13 py-3 text-gray-600 dark:text-slate-300"> 
             <AiFillInstagram />
-            <BiLogoTelegram/>
-            <IoLogoDiscord />
             <IoLogoLinkedin />
             <IoLogoGithub />
             <BiLogoGmail />
