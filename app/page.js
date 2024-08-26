@@ -20,7 +20,7 @@ import web1 from '../public/web1.png';
 import web2 from '../public/web2.png';
 import web3 from '../public/web3.png';
 import web4 from '../public/web4.png';
-import Design4 from '../pulbic/Design4.png';
+import Design4 from '../public/Design4.png';
 import {useState} from 'react';
 
 
