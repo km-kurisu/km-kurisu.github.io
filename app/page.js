@@ -80,16 +80,13 @@ export default function Home() {
               Web Development: Building custom websites with a focus on user experience, functionality, and aesthetics.
               </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
-              App Design: Creating intuitive and visually appealing mobile applications.
-              </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
               Digital Art: Producing original artwork, illustrations, and graphic design elements.
                </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
-              UI/UX Design: Designing user interfaces that are both visually engaging and easy to navigate.
-               </p> 
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">  
               Full-Stack Development: Handling all aspects of software development, from front-end to back-end.
+              </p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">  
+              Application Development: Building custom applications with a focus on user experience, functionality, and aesthetics.
               </p>
           </div>
           <div className="lg:flex gap-10">
@@ -118,23 +115,10 @@ export default function Home() {
                 reality.
               </p>
               <h4 className="py-4 text-teal-600 dark:text-emerald-400">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1 dark:text-emerald-400">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-emerald-400">Illustrator</p>
-              <p className="text-gray-800 py-1 dark:text-emerald-400">Figma</p>
-              <p className="text-gray-800 py-1 dark:text-emerald-400">Indesign</p>
-            </div>
-            <div className="text-left shadow-xl p-10 rounded-xl my-10 flex-1 dark:bg-slate-700 dark:shadow-2xl">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-teal-300 ">Consulting</h3>
-              <p className="py-2 dark:text-slate-300">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
-              </p>
-              <h4 className="py-4 text-teal-600 dark:text-emerald-400" >Design Tools I Use</h4>
-              <p className="text-gray-800 py-1 dark:text-emerald-400">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-emerald-400">Illustrator</p>
-              <p className="text-gray-800 py-1 dark:text-emerald-400">Figma</p>
-              <p className="text-gray-800 py-1 dark:text-emerald-400">Indesign</p>
+              <p className="text-gray-800 py-1 dark:text-emerald-400">Android Studio</p>
+              <p className="text-gray-800 py-1 dark:text-emerald-400">Visual Studio Code</p>
+              <p className="text-gray-800 py-1 dark:text-emerald-400">Visual Studio</p>
+              <p className="text-gray-800 py-1 dark:text-emerald-400">Unity 3D</p>
             </div>
           </div>
         </section>
