@@ -61,7 +61,7 @@ export default function Home() {
             My ability to combine technical expertise with creative vision makes me a versatile asset in the digital world.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-slate-300"> 
+          <div className="text-3xl flex justify-center gap-13 py-3 text-gray-600 dark:text-slate-300"> 
             <AiFillInstagram />
             <BiLogoTelegram/>
             <IoLogoDiscord />
