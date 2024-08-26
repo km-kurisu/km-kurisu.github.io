@@ -67,7 +67,7 @@ export default function Home() {
             <BiLogoSpotify/>
             <BiLogoTelegram/>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-slate-500 rounded-full w-80 h-90 mt-20 mb-20 md:h-96 md:w-96 md:mb-60 ">
+          <div className="relative mx-auto bg-gradient-to-b from-slate-500 rounded-full w-80 h-80 mt-20 mb-20 md:h-96 md:w-96 md:mb-40 ">
             <Image src={Design4}  layout="Fill" objectFit="cover"/>
           </div>
         </section>
