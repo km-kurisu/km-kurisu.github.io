@@ -20,6 +20,7 @@ import web1 from '../public/web1.png';
 import web2 from '../public/web2.png';
 import web3 from '../public/web3.png';
 import web4 from '../public/web4.png';
+import Design4 from '../pulbic/Design4.png';
 import {useState} from 'react';
 
 
@@ -67,7 +68,7 @@ export default function Home() {
             <BiLogoTelegram/>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-slate-500 rounded-full w-80 h-90 mt-20 mb-20 md:h-96 md:w-96 md:mb-60 ">
-            <Image src={RuanMei}  layout="Fill" objectFit="cover"/>
+            <Image src={Design4}  layout="Fill" objectFit="cover"/>
           </div>
         </section>
         <section>
