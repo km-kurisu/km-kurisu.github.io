@@ -4,12 +4,13 @@ import React from "react";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {
   IoLogoDiscord, 
-  IoLogoTwitter 
+  IoLogoLinkedin,
+  IoLogoGithub 
 } from 'react-icons/io5';
 import {AiFillInstagram} from 'react-icons/ai';
 import {
-  BiLogoTelegram, 
-  BiLogoSpotify
+  BiLogoTelegram,
+  BiLogoGmail
 } from 'react-icons/bi';
 import Image from "next/image";
 import RuanMei from '../public/RuanMei.png';
@@ -61,11 +62,12 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-slate-300"> 
-            <IoLogoTwitter />
             <AiFillInstagram />
-            <IoLogoDiscord />
-            <BiLogoSpotify/>
             <BiLogoTelegram/>
+            <IoLogoDiscord />
+            <IoLogoLinkedin />
+            <IoLogoGithub />
+            <BiLogoGmail />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-slate-500 rounded-full w-80 h-80 mt-20 mb-20 md:h-96 md:w-96 md:mb-40 ">
             <Image src={Design4}  layout="Fill" objectFit="cover"/>
