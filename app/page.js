@@ -58,10 +58,10 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-slate-300"> 
-            <AiFillInstagram />
-            <IoLogoLinkedin />
-            <IoLogoGithub />
-            <BiLogoGmail />
+           <a href="https://www.instagram.com/kamlesh_m.02/"> <AiFillInstagram /></a>
+           <a href="https://www.linkedin.com/in/kamlesh-mistry-957895260"> <IoLogoLinkedin /></a>
+           <a href="https://github.com/km-kurisu"> <IoLogoGithub /></a>
+           <a href="mailto:kamleshkmistry33@gmail.com"> <BiLogoGmail /></a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-slate-500 rounded-full w-90 h-90 mt-20 mb-20 md:h-96 md:w-96 md:mb-40 ">
             <Image src={Design4}  layout="Fill" objectFit="cover"/>
