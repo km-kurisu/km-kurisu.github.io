@@ -74,16 +74,16 @@ export default function Home() {
               As a Developer, Designer, and Artist, I offer a comprehensive range of services tailored to your digital needs. My expertise includes:
               </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
-              <span className=" text-teal-600 dark:text-emerald-400">Web Development:</span> Building custom websites with a focus on user experience, functionality, and aesthetics.
+              <span className="font-aktura text-xl text-teal-600 dark:text-emerald-400">Web Development:</span> Building custom websites with a focus on user experience, functionality, and aesthetics.
               </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
-            <span className=" text-teal-600 dark:text-emerald-400">Digital Art: </span>Producing original artwork, illustrations, and graphic design elements.
+            <span className="font-aktura text-xl text-teal-600 dark:text-emerald-400">Digital Art: </span>Producing original artwork, illustrations, and graphic design elements.
                </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">  
-            <span className=" text-teal-600 dark:text-emerald-400">Full-Stack Development:</span> Handling all aspects of software development, from front-end to back-end.
+            <span className="font-aktura text-xl text-teal-600 dark:text-emerald-400">Full-Stack Development:</span> Handling all aspects of software development, from front-end to back-end.
               </p>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">  
-              <span className=" text-teal-600 dark:text-emerald-400">Application Development:</span> Building custom applications with a focus on user experience, functionality, and aesthetics.
+              <span className="font-aktura text-xl text-teal-600 dark:text-emerald-400">Application Development:</span> Building custom applications with a focus on user experience, functionality, and aesthetics.
               </p>
           </div>
           <div className="lg:flex gap-10">
