@@ -74,7 +74,7 @@ export default function Home() {
               As a Developer, Designer, and Artist, I offer a comprehensive range of services tailored to your digital needs. My expertise includes:
               </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
-              <style text-teal-600 dark:text-emerald-400>Web Development:</style> Building custom websites with a focus on user experience, functionality, and aesthetics.
+              <span className=" text-teal-600 dark:text-emerald-400">Web Development:</span> Building custom websites with a focus on user experience, functionality, and aesthetics.
               </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
               Digital Art: Producing original artwork, illustrations, and graphic design elements.
