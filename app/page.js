@@ -58,8 +58,8 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-slate-300"> 
-           <a href="https://www.instagram.com/kamlesh_m.02/" target="_blank"> <AiFillInstagram /></a>
-           <a href="https://www.linkedin.com/in/kamlesh-mistry-957895260" target="_blank"> <IoLogoLinkedin /></a>
+           <a href="https://www.instagram.com/kamleshm_02/" target="_blank"> <AiFillInstagram /></a>
+            <a href="https://www.linkedin.com/in/kamlesh-mistry-957895260" target="_blank"> <IoLogoLinkedin /></a>
            <a href="https://github.com/km-kurisu" target="_blank"> <IoLogoGithub /></a>
            <a href="mailto:kamleshkmistry33@gmail.com" target="_blank"> <BiLogoGmail /></a>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
               As a Developer, Designer, and Artist, I offer a comprehensive range of services tailored to your digital needs. My expertise includes:
               </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
-              Web Development: Building custom websites with a focus on user experience, functionality, and aesthetics.
+              <style text-teal-600 dark:text-emerald-400>Web Development:</style> Building custom websites with a focus on user experience, functionality, and aesthetics.
               </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300 ">
               Digital Art: Producing original artwork, illustrations, and graphic design elements.
