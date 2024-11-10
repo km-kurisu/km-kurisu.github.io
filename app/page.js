@@ -100,7 +100,7 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-emerald-400">Photoshop</p>
               <p className="text-gray-800 py-1 dark:text-emerald-400">Illustrator</p>
               <p className="text-gray-800 py-1 dark:text-emerald-400">Figma</p>
-              <p className="text-gray-800 py-1 dark:text-emerald-400">Indesign</p>
+              <p className="text-gray-800 py-1 dark:text-emerald-400">Canva</p>
             </div>
             <div className="text-left shadow-xl p-10 rounded-xl my-10 flex-1 dark:bg-slate-700 dark:shadow-2xl">
               <Image src={code} width={100} height={100} />
