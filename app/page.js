@@ -45,6 +45,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 ">
+          <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
             <h2 className="text-5xl py-2 text-slate-600 font-medium md:text-6xl dark:text-gray-50 ">
               Kamlesh Mistry
               </h2>
@@ -62,6 +63,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/kamlesh-mistry-957895260" target="_blank"> <IoLogoLinkedin /></a>
            <a href="https://github.com/km-kurisu" target="_blank"> <IoLogoGithub /></a>
            <a href="mailto:kamleshkmistry33@gmail.com" target="_blank"> <BiLogoGmail /></a>
+           <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="kamleshmistry02" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/kamleshmistry02?trk=profile-badge">Kamlesh Mistry</a></div>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-slate-500 rounded-full w-90 h-90 mt-20 mb-20 md:h-96 md:w-96 md:mb-40 ">
             <Image src={Design4}  layout="Fill" objectFit="cover"/>
