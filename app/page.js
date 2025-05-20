@@ -69,7 +69,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-4xl font-aktura py-1 dark:text-teal-300">Services i offer</h3>
+            <h3 className="text-4xl font-aktura py-1 text-teal-600 dark:text-teal-300">Services i offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300" >
               As a Developer, Designer, and Artist, I offer a comprehensive range of services tailored to your digital needs. My expertise includes:
               </p>
@@ -87,7 +87,7 @@ export default function Home() {
               </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-left shadow-xl p-10 rounded-xl my-10 flex-1 dark:bg-slate-700 dark:shadow-2xl">
+            <div className="text-left shadow-xl p-10 rounded-xl my-10 flex-1 text-teal-600 dark:bg-slate-700 dark:shadow-2xl">
               <Image src={design} width={100} height={100} />
               <h3 className="text-2xl font-aktura font-medium pt-8 pb-2 dark:text-teal-300 ">
                 Beautiful Designs
