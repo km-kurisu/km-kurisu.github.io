@@ -33,9 +33,38 @@ body {
 }
 
 @font-face {
-  font-family: "butrons";
+  font-family: "Nippo-Bold";
+  src: url("/Nippo-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "array-w";
+  src: url("/Array-Wide.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "array-r";
+  src: url("/Array-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "array-b";
+  src: url("/Array-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "burtons";
+  src: url("/Burtons.otf") format("opentype");
+}
+
+@font-face {
   font-family: "aktura";
-  src: url("../public/Burtons.otf");
-  src:url("../public/Aktura.otf");
+  src: url("/Aktura.otf") format("opentype");
 }
 
