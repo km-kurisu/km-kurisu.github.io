@@ -1,6 +1,6 @@
 'use client';
 import Head from "next/head";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { 
   FiInstagram ,
@@ -13,13 +13,33 @@ import Image from "next/image";
 import design from '../public/design.png';
 import code from '../public/code.png';
 import Design4 from '../public/Design4.png';
-import {useState} from 'react';
-
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+
+  // Joke API state
+  const [joke, setJoke] = useState(null);
+  const [loadingJoke, setLoadingJoke] = useState(false);
+
+  // Fetch a random joke from the JokeAPI
+  const fetchJoke = async () => {
+    setLoadingJoke(true);
+    try {
+      const res = await fetch("https://v2.jokeapi.dev/joke/Any?type=single,twopart&blacklistFlags=nsfw,religious,political,racist,sexist,explicit");
+      const data = await res.json();
+      setJoke(data);
+    } catch (err) {
+      setJoke({ type: "single", joke: "Couldn't fetch a joke right now. Try again!" });
+    }
+    setLoadingJoke(false);
+  };
+
+  useEffect(() => {
+    fetchJoke();
+  }, []);
+
   return (
-    <div className={darkMode? "dark" :""}>
+    <div className={darkMode ? "dark" : ""}>
       <Head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
@@ -141,12 +161,71 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Embedded YouTube Video */}
+        <section className="flex justify-center my-8">
+          <div className="w-full max-w-2xl aspect-video">
+            <h3 className="text-4xl text-center font-arrayr py-1 text-teal-600 dark:text-teal-300">One of my favourite songs</h3>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/0Uhh62MUEic?si=LZyWq4AunW3HX-aE"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="rounded-lg w-full h-full"
+            ></iframe>
+          </div>
+        </section>
+        {/* Joke Section */}
+        <section className="flex flex-col items-center justify-center my-12">
+          <div className="bg-animated-gradient rounded-xl shadow-lg p-6 max-w-xl w-full text-center">
+            <h3 className="text-3xl font-arrayr neon-text mb-4">Random Joke</h3>
+            {loadingJoke ? (
+              <p className="text-teal-600 dark:text-teal-300">Loading...</p>
+            ) : joke ? (
+              <div className="text-lg text-slate-800 dark:text-slate-200 min-h-[60px]">
+                {joke.type === "single" ? (
+                  <span>{joke.joke}</span>
+                ) : (
+                  <>
+                    <span className="font-bold">{joke.setup}</span>
+                    <br />
+                    <span>{joke.delivery}</span>
+                  </>
+                )}
+              </div>
+            ) : null}
+            <button
+              onClick={fetchJoke}
+              className="mt-4 px-4 py-2 bg-gradient-to-r from-teal-400 to-blue-500 text-white rounded-full shadow card-flare hover:from-teal-500 hover:to-blue-600 transition-all"
+              disabled={loadingJoke}
+            >
+              {loadingJoke ? "Loading..." : "Get Another Joke"}
+            </button>
+          </div>
+        </section>
         <section>
          <div>
-          <footer className="text-gray-800 text-center py-1 font-nippo dark:text-emerald-400"> 
-            <p>&copy; 2025 Kamlesh Mistry. All rights reserved.</p>
-            </footer>
-          </div>        
+          <footer className="text-gray-800 text-center py-4 font-nippo dark:text-emerald-400">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-2 text-base">
+              <span className="flex items-center gap-2">
+                <svg className="inline-block w-5 h-5 text-teal-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 12a4 4 0 01-8 0V8a4 4 0 018 0v4z"/><path d="M12 16v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <a href="mailto:kamleshkmistry33@gmail.com" className="underline hover:text-teal-600">kamleshkmistry33@gmail.com</a>
+              </span>
+              <span className="flex items-center gap-2">
+                <svg className="inline-block w-5 h-5 text-teal-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M22 16.92V19a2 2 0 01-2.18 2A19.72 19.72 0 013 5.18 2 2 0 015 3h2.09a2 2 0 012 1.72c.13 1.05.37 2.07.72 3.05a2 2 0 01-.45 2.11l-.27.27a16 16 0 006.29 6.29l.27-.27a2 2 0 012.11-.45c.98.35 2 .59 3.05.72A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:+919876543210" className="underline hover:text-teal-600">+91 98765 43210</a>
+              </span>
+              <span className="flex items-center gap-2">
+                <svg className="inline-block w-5 h-5 text-teal-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                <span>Virar, Maharashtra, India</span>
+              </span>
+              <p>&copy; 2025 Kamlesh Mistry. All rights reserved.</p>
+            </div>
+          </footer>
+         </div>        
         </section>
       </main>
     </div>

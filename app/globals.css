@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  scroll-behavior: smooth; /* Add smooth scroll for scroll animations */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +25,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  scroll-behavior: smooth; /* Ensure smooth scroll on body as well */
 }
 
 @layer utilities {
@@ -32,6 +34,7 @@ body {
   }
 }
 
+/* Font faces */
 @font-face {
   font-family: "Nippo-Bold";
   src: url("/Nippo-Bold.otf") format("opentype");
@@ -66,5 +69,78 @@ body {
 @font-face {
   font-family: "aktura";
   src: url("/Aktura.otf") format("opentype");
+}
+
+/* Custom bounce-up animation for AOS */
+@keyframes aos-bounce-up {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1.05);
+  }
+  80% {
+    transform: translateY(10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+[data-aos="bounce-up"] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos="bounce-up"].aos-animate {
+  opacity: 1;
+  animation: aos-bounce-up 0.9s cubic-bezier(.68,-0.55,.27,1.55) both;
+}
+
+/* Flare: Animated gradient background for main sections */
+.bg-animated-gradient {
+  background: linear-gradient(120deg, #a7ffeb 0%, #64b5f6 50%, #b388ff 100%);
+  background-size: 200% 200%;
+  animation: gradient-move 6s ease-in-out infinite;
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Flare: Card hover effect */
+.card-flare {
+  transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+  box-shadow: 0 4px 24px 0 rgba(52, 211, 153, 0.08);
+}
+.card-flare:hover {
+  transform: translateY(-10px) scale(1.03) rotate(-1deg);
+  box-shadow: 0 8px 32px 0 rgba(52, 211, 153, 0.18), 0 1.5px 8px 0 #b388ff44;
+  border-color: #64b5f6;
+}
+
+/* Flare: Neon text effect for headings */
+.neon-text {
+  color: #64ffda;
+  text-shadow:
+    0 0 5px #64ffda,
+    0 0 10px #64ffda,
+    0 0 20px #64ffda,
+    0 0 40px #64b5f6;
+  letter-spacing: 1px;
+}
+
+/* Flare: Subtle floating animation for icons/images */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-10px);}
 }
 
