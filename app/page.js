@@ -92,7 +92,7 @@ export default function Home() {
               <h3 className="text-2xl font-aktura font-medium pt-8 pb-2 dark:text-teal-300 ">
                 Beautiful Designs
               </h3>
-              <p className="py-2 dark:text-slate-300">
+              <p className="py-2 text-teal-600 dark:text-slate-300">
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
@@ -107,7 +107,7 @@ export default function Home() {
               <h3 className="text-2xl font-aktura font-medium pt-8 pb-2 dark:text-teal-300 ">
                 Code your dream project
               </h3>
-              <p className="py-2 dark:text-slate-300">
+              <p className="py-2 text-teal-600 dark:text-slate-300">
                 Do you have an idea for your next great website? Let's make it a
                 reality.
               </p>
