@@ -14,6 +14,10 @@ module.exports = {
       fontFamily:{
         aktura:"aktura",
         burtons:"burtons",
+        arrayw:"array-w",
+        arrayr:"array-r",
+        arrayb:"array-b",
+        nippo:"Nippo-Bold",
       }
     },
   },
