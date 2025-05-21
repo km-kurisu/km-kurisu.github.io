@@ -18,7 +18,7 @@ import self from '../public/self.jpg';
 import Design4 from '../public/Design4.png';
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   // Joke API state
   const [joke, setJoke] = useState(null);
