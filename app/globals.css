@@ -102,7 +102,7 @@ body {
 
 /* Flare: Animated gradient background for main sections */
 .bg-animated-gradient {
-  background: linear-gradient(120deg, #a7ffeb 0%, #64b5f6 50%, #b388ff 100%);
+  background: linear-gradient(120deg, #A6E1FA 0%, #F9CFF2 50%, #52154E 100%);
   background-size: 200% 200%;
   animation: gradient-move 6s ease-in-out infinite;
 }
@@ -142,5 +142,27 @@ body {
 @keyframes floating {
   0%, 100% { transform: translateY(0);}
   50% { transform: translateY(-10px);}
+}
+
+/* Gradient backgrounds for cards */
+.card-achievements {
+  background: linear-gradient(135deg, #A6E1FA 0%, #F9CFF2 100%);
+}
+
+.card-futuregoals {
+  background: linear-gradient(135deg, #F9CFF2 0%, #A6E1FA 60%, #52154E 100%);
+}
+
+.card-personalside {
+  background: linear-gradient(135deg, #F9CFF2 0%, #52154E 100%);
+  color: #fff;
+}
+
+/* Optional: add a little shadow and border radius for extra pop */
+.card-achievements,
+.card-futuregoals,
+.card-personalside {
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(82, 21, 78, 0.10);
 }
 
