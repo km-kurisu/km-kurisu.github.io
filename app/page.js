@@ -19,10 +19,11 @@ import Design4 from '../public/Design4.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-
-  // Joke API state
   const [joke, setJoke] = useState(null);
   const [loadingJoke, setLoadingJoke] = useState(false);
+
+  // Scroll to top button state
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Fetch a random joke from the JokeAPI
   const fetchJoke = async () => {
@@ -40,6 +41,19 @@ export default function Home() {
   useEffect(() => {
     fetchJoke();
   }, []);
+
+  // Show scroll-to-top button after scrolling down 200px
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 200);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className={`bg-animated-gradient ${darkMode ? "dark" : ""}`}>
@@ -231,6 +245,19 @@ export default function Home() {
          </div>        
         </section>
       </main>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={handleScrollToTop}
+          className="fixed bottom-8 right-8 z-50 bg-gradient-to-r from-[#0E6BA8] to-[#52154E] text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform"
+          aria-label="Scroll to top"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      )}
     </div>
   );
 }
