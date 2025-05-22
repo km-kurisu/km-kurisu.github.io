@@ -18,6 +18,7 @@ module.exports = {
         arrayr:"array-r",
         arrayb:"array-b",
         nippo:"Nippo-Bold",
+        stardom:"stardom",
       }
     },
   },
